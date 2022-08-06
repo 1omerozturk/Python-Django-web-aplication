@@ -1,0 +1,243 @@
+.h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+    color: rgb(1, 200, 255);
+    text-align: center;
+    
+}
+#bass{
+    background-color: aliceblue;
+    width: 200px;
+    height: 50px;
+    color: black;
+    background-color: transparent;
+
+}
+.h1::selection{
+    background-color: transparent;
+    color: rgb(1, 200, 255);
+    
+}
+.color{
+    color:rgb(1, 200, 255);
+}
+body{
+	background-color:black;
+	animation:image 1s infinite alternate;
+	-webkit-animation:image 30s infinite alternate;
+	-moz-animation:image 60s infinite alternate;
+}
+@keyframes image{
+	0%{
+		background-color:#000000
+	}
+   
+    25%{
+		background-color:#19003f
+	}
+ 
+    50%{
+		background-color:#373365
+	}
+    75%{
+		background-color:#65547e
+	}
+    
+ 
+	100%{
+		background-color:#a68ecb
+	}
+}
+@keyframes tim{
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+    60%{
+        background-color:rgb(0, 255, 174);
+    }
+    100%{
+        background-color:rgb(255, 255, 255);
+    }
+}
+
+.container,body{
+background-color: rgb(157, 145, 255);
+}
+.container{
+    
+    opacity: 90%;
+    background-color:rgba(255, 255, 255, 0.932);
+    height: 73px;
+    min-width: auto;
+    max-width: 850px;
+    overflow:hidden;
+    text-align: justify;
+}
+.qoute-display{
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 80%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px,2px ,2px ,2px  rgb(255, 255, 255);
+    border-style:solid;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 30px;
+    text-align: justify; 
+}
+#divbutt{
+    align-items: center;
+    background-color:transparent;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 318px;
+    right:+15px;
+}
+#refresh{
+    color: rgb(1, 200, 255);
+}
+.center{
+    
+    top: 50%;
+    left: 30%;
+}
+
+#refresh:hover{
+    animation:pulsate 1s
+    ease-in-out;
+}
+#butt{
+    align-items: center;
+    font-size: 26px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 25%;
+    height: 40px;;
+    width: 40px;
+}
+
+*span{
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: justify;
+    
+    color: rgb(255, 255, 255);
+}
+.qoute-input{
+    
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+    min-width: auto;
+    max-height: 45px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: black;
+    position: relative;
+    width: 650px;
+    resize: none;
+    top: 10px;
+    font-size: 30px;
+    margin-right: 150px;
+}
+.qoute-input:focus{
+    border-color: black;
+}
+.correct{
+    color:
+     rgb(35, 138, 35);
+}
+.incorrect{
+    color: rgb(255, 0, 0);
+}
+.container qoute-display span.active{
+    color:rgb(52, 64, 64);
+}
+#counter2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    align-items: center;
+    position: absolute;
+    top: 155px;
+    margin-right: 10px;
+    text-align: center;
+    padding-left: 3px;
+}
+.container qoute-display span.active::before{
+    content: "";
+    background-color: aqua;
+}
+.showresult{
+   color: #dcdcdc;
+   border: #4e00c2;
+   border-style: dashed;
+   border-width: 2px;
+   border-radius: 50%;
+   place-items: center;
+}
+#trt{
+    font-size:20px ;
+    place-items: center;
+    text-align: center;
+
+}
+#time{
+    background-color: white;
+    font-weight: bolder;
+    animation:tim 1s infinite alternate;
+	-webkit-animation:tim 1s infinite alternate;
+	-moz-animation:tim 0s infinite alternate;
+    border: solid 3px black;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+#time:hover{
+    animation:pulsate 1s
+    ease-in-out;
+}
+@keyframes pulsate{
+    0%{
+        box-shadow:
+        0 0 75px #5ddcff,
+        0 0 20px #4e00c2;
+    }
+   
+}
+#result{
+    margin-top: 20px;
+    height: 200px;
+    width: calc(50%-50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 40px;
+}
+#result .showresult{
+    height: 200px;
+    width: 150px;
+    display: grid;
+    place-items: center;
+    margin: 5px 10px;
+}
+#result .showresult h2{
+    text-decoration: underline;
+    font-size: 20px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-style: bold;
+
+}
+#result .showresult h1{
+line-height: 10px;
+font-size: 30px;
+padding-top: -15px;
+font-weight: bolder;
+color: antiquewhite;
+}

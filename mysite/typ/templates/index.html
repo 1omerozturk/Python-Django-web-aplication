@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/typ.css'%}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YAZMA HIZ TESTİ</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="typ.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+<body>
+  <h1 class="h1">
+    <i class='fas fa-keyboard color'></i>
+    YAZMA HIZ TESTİ
+
+  </h1>
+
+  <center>
+    <br>
+    <div title="Süreyi gizlemek veya açmak için tıklayın." id="time">
+      <h3 id="counter2">1:00</h3>
+      <h2 style="display: none;" id="start">Başlamak için buraya tıklayın.</h2>
+     
+    </div>
+
+    <div id="divbutt">
+      <button id="butt">
+        <i id="refresh" class="fa fa-refresh"></i>
+      </button>
+    </div>
+    <br>
+
+    <div id="container" class="container">
+      <div class="qoute-display" id="qouteDisplay" title="TÜRKÇE İLK 300 KELİME">
+      </div>
+
+    </div class="wrap">
+    <div class="wrapper">
+      <textarea rows="1" cols="99999" wrap="off" class="qoute-input" id="qouteInput"></textarea>
+     
+      <br>
+    </div>
+    <div id="bass"></div>
+    <div id="result">
+      <div title="Dakikada Kelime Sayısı" class="showresult">
+        <h2>DKS</h2>
+        <h1 id="word">00</h1>
+      </div>
+      <div title="Dakikada Toplam Vuruş Sayısı" class="showresult">
+        <h2>DVS</h2>
+        <h1 id="characters">00</h1>
+      </div>
+      <div title="Toplam Hata Sayısı" class="showresult">
+        <h2>Hata</h2>
+        <h1 id="error">00</h1>
+      </div>
+
+    </div>
+
+
+    <script src="{% static 'js/jass.js'%}"></script>
+
+</body>
+
+</html>
